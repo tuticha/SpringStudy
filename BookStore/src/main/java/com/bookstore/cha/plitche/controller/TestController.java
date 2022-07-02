@@ -1,34 +1,17 @@
 package com.bookstore.cha.plitche.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.bookstore.cha.plitche.service.TestService;
+
 @Controller
 public class TestController {
 	
-	@RequestMapping(value = "/test1/test2")
-	public String test(Model model) {
-		System.out.println("test 성공");
-		System.out.println("test1/test2 성공");
-		
-		
-		model.addAttribute("result", "success");
-		model.addAttribute("result1", "success1");
-		model.addAttribute("test1", "test1/test2 페이지 도착");
-				
-		return "test2";
-	}
-	
-	@RequestMapping(value = "/test/plitche")
-	public String test01(Model model) {
-		System.out.println("test로 가기 성공");
-		
-		model.addAttribute("test01", "test에 도착");
-		
-		return "plitche";
-		
-	}
+	@Autowired
+	private TestService testService;
 	
 	@RequestMapping(value = "/test1")
 	public String test1(Model model) {
@@ -38,6 +21,16 @@ public class TestController {
 		model.addAttribute("yahoo1", 111);
 		
 		return "test1";
+	}
+	
+	@RequestMapping(value = "/serviceTest")
+	public String serviceTest(Model model) {
+		int a = testService.getNumber();
+		System.out.println(a);
+		
+		model.addAttribute("getNumber", a);
+		
+		return "serviceTest";
 	}
 	
 }

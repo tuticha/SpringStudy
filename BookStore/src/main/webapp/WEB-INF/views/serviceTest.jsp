@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<p>여기는  plitche.jsp파일 입니다.</p>
-<p>${test01}</p>
-
+${getNumber}
 </body>
 </html>
