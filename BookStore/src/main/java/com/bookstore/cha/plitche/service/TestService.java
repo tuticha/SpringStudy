@@ -4,4 +4,6 @@ public interface TestService {
 
 	public int getNumber();
 	
+	public int sumNumber(int sumNumber);
+	
 }

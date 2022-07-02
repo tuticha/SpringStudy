@@ -33,4 +33,15 @@ public class TestController {
 		return "serviceTest";
 	}
 	
+	@RequestMapping(value = "/serviceTest2")
+	public String serviceTest2(Model model) {
+		int sumNumber = 10;
+		int result = testService.sumNumber(sumNumber);
+		
+		model.addAttribute("getNumber", result);
+		
+		return "serviceTest";
+	}
+	
+	
 }

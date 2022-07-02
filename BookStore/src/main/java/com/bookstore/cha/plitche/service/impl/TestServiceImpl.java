@@ -15,4 +15,10 @@ public class TestServiceImpl implements TestService {
 	public int getNumber() {
 		return testDao.getNumber();
 	}
+	
+	public int sumNumber(int sumNumber) {
+		int result = sumNumber + testDao.getNumber(); 
+		return result;
+	}
+	
 }

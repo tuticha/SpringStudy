@@ -16,4 +16,5 @@ public class TestDaoImpl implements TestDao {
 		int a = sqlSession.selectOne("dbTest.getNumber");
 		return a;
 	}
+	
 }

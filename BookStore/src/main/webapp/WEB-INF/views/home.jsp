@@ -12,5 +12,6 @@
 <a href="/cha/test1">test1로 가기</a>
 
 <a href="/cha/serviceTest">service test로 가기</a>
+<a href="/cha/serviceTest2">service test2로 가기</a>
 </body>
 </html>
