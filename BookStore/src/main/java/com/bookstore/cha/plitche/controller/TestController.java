@@ -20,6 +20,16 @@ public class TestController {
 		return "test2";
 	}
 	
+	@RequestMapping(value = "/test/plitche")
+	public String test01(Model model) {
+		System.out.println("test로 가기 성공");
+		
+		model.addAttribute("test01", "test에 도착");
+		
+		return "plitche";
+		
+	}
+	
 	@RequestMapping(value = "/test1")
 	public String test1(Model model) {
 		System.out.println("test1 성공");
