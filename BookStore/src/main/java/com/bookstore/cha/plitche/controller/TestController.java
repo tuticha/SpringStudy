@@ -116,6 +116,11 @@ public class TestController {
 		return "";
 	}
 	
-	
+	@RequestMapping(value = "/dbTest", method = RequestMethod.GET)
+	public String dbTest1() {
+		testService.dbTest1();
+		
+		return "";
+	}
 	
 }

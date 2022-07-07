@@ -9,4 +9,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select 1 from dual
 	</select>
 	
+	<select id="getString" resultType="String">
+		select 'a' from dual
+	</select>
+	
+	<select id="getList" resultType="int">
+		select no from testDBcha
+	</select>
+	
+	<select id="sumNumbers" resultType="int" parameterType="int">
+		select 1 + #{number} from dual
+	</select>
+	
 </mapper>

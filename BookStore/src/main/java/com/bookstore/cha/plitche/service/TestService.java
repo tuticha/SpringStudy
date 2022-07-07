@@ -10,4 +10,5 @@ public interface TestService {
 
 	public int sumNumber3(int sumNumber1, int sumNumber2, int sumNumber3);
 	
+	public void dbTest1();
 }

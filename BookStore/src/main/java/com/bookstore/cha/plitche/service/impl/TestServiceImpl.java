@@ -31,5 +31,7 @@ public class TestServiceImpl implements TestService {
 		return result;
 	}
 	
-	
+	public void dbTest1() {
+		testDao.dbTest1();
+	}
 }

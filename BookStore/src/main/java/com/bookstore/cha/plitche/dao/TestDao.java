@@ -4,4 +4,5 @@ public interface TestDao {
 
 	public int getNumber();
 	
+	public void dbTest1();
 }
