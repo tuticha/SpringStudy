@@ -46,10 +46,10 @@ public class TestController {
 		return "serviceTest";
 	}
 	
-	@RequestMapping(value = "/serviceTest3", method = RequestMethod.GET)
+	@RequestMapping(value = "/serviceTest3", method = RequestMethod.GET) //get방식으로 받겠다.
 	public String serviceTest3(@RequestParam("plitche") int number, Model model) {
 		System.out.println(number);
-		return "";
+		return "home";
 	}
 	
 	@RequestMapping(value = "/serviceTest4/{number}", method = RequestMethod.GET)
@@ -87,8 +87,34 @@ public class TestController {
 	}
 	
 	
+	@RequestMapping(value = "/homework1", method = RequestMethod.GET)
+	public String homework1(@RequestParam("cha1") int number01,
+							@RequestParam("cha2") int number02,
+			Model model) {
+		int result = testService.sumNumber2(number01, number02);
+		
+		System.out.println(number01);
+		System.out.println(number02);
+		System.out.println(result);
+		return "";
+	}
 	
+	@RequestMapping(value = "/homework2", method = RequestMethod.GET)
+	public String homework2(@RequestParam("cha3") int number03, Model model) {
+		int result = testService.sumNumber(number03);
+		return "";
+	}
 	
+	@RequestMapping(value = "/homework3", method = RequestMethod.GET)
+	public String homework3(@RequestParam("cha1") int number01,
+							@RequestParam("cha2") int number02,
+							@RequestParam("cha3") int number03,
+							Model model) {
+		int result = testService.sumNumber3(number01, number02, number03);
+		
+		System.out.println(result);
+		return "";
+	}
 	
 	
 	

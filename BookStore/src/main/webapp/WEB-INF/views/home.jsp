@@ -8,7 +8,7 @@
 	Hello world!  
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P>  The time on the server is ${serverTime}. </P>울산광역시 북구 화산로 75
 <a href="/cha/test1">test1로 가기</a>
 
 <a href="/cha/serviceTest">service test로 가기</a>
@@ -20,6 +20,10 @@
 <a href="/cha/serviceTest4/5">parameter service2</a>
 <a href="/cha/login?id=plitche&pw=1111">login</a>
 <a href="/cha/login2/plitche/1111">login2</a>
+
+<a href="/cha/homework1?cha1=1&cha2=2">homework parameter1</a>
+<a href="/cha/homework2?cha3=1">homework parameter2</a>
+<a href="/cha/homework3?cha1=1&cha2=2&cha3=3">homework parameter3</a>
 
 </body>
 </html>

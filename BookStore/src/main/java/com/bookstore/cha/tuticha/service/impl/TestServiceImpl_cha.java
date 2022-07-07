@@ -1,5 +1,5 @@
 package com.bookstore.cha.tuticha.service.impl;
 
-public class TestServiceImpl {
+public class TestServiceImpl_cha {
 
 }
