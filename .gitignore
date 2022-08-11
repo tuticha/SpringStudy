@@ -2,3 +2,5 @@
 *.properties
 *.MF
 *.properties
+/.recommenders/
+/.recommenders/
