@@ -1,4 +1,4 @@
-package com.bookstore.cha.plitche.service;
+package com.bookstore.cha.tuticha.service;
 
 public interface TestService {
 

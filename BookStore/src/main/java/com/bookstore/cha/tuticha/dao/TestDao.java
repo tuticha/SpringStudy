@@ -1,4 +1,4 @@
-package com.bookstore.cha.plitche.dao;
+package com.bookstore.cha.tuticha.dao;
 
 public interface TestDao {
 

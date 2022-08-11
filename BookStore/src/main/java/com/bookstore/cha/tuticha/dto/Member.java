@@ -1,4 +1,4 @@
-package com.bookstore.cha.plitche.dto;
+package com.bookstore.cha.tuticha.dto;
 
 public class Member {
 

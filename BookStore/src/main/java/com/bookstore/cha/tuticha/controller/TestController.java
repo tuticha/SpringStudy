@@ -1,4 +1,4 @@
-package com.bookstore.cha.plitche.controller;
+package com.bookstore.cha.tuticha.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.bookstore.cha.plitche.service.TestService;
+import com.bookstore.cha.tuticha.service.TestService;
+
 
 @Controller
 public class TestController {

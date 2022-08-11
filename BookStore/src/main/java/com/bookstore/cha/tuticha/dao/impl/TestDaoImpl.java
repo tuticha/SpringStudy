@@ -1,4 +1,4 @@
-package com.bookstore.cha.plitche.dao.impl;
+package com.bookstore.cha.tuticha.dao.impl;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bookstore.cha.plitche.dao.TestDao;
+import com.bookstore.cha.tuticha.dao.TestDao;
 
 @Service
 public class TestDaoImpl implements TestDao {

@@ -1,10 +1,11 @@
-package com.bookstore.cha.plitche.service.impl;
+package com.bookstore.cha.tuticha.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bookstore.cha.plitche.dao.TestDao;
-import com.bookstore.cha.plitche.service.TestService;
+import com.bookstore.cha.tuticha.dao.TestDao;
+import com.bookstore.cha.tuticha.service.TestService;
+
 
 @Service
 public class TestServiceImpl implements TestService {
