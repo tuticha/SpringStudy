@@ -8,8 +8,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="goLogin" parameterType="hashMap" resultType="Integer">
 		select memberId
 		from testMember
-		where memberId = #{id}
-		and memberPw = #{pw}
+		where memberId = ${id}
+			and memberPw = ${pw}
 	</select>
 	
 </mapper>

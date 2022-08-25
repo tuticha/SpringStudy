@@ -51,13 +51,18 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/goLogin")
-	public String goLogin(@RequestParam String id, @RequestParam String pw) {
+	public String goLogin(@RequestParam String id, @RequestParam String pw,
+						  Model model) {
 		System.out.println("로그인 시도");
 		System.out.println("controller id : " + id);
 		System.out.println("controller pw : " + pw);		
 		
 		homeService.goLogin(id, pw);
 		
+		model.addAttribute("loginResult", "success");
+		// session : 서버에 저장
+		
+		// cookie : 로컬 pc 브라우저에 저장
 		return "home";
 	}
 }
