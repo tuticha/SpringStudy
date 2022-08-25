@@ -5,11 +5,18 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="home">
 
-	<select id="goLogin" parameterType="hashMap" resultType="Integer">
+	<select id="goLogin" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+		select *
+		from testMember
+		where memberId = #{id}
+			and memberPw = #{pw}
+	</select>
+	
+	<select id="goLogin2" parameterType="java.util.HashMap" resultType="String">
 		select memberId
 		from testMember
-		where memberId = ${id}
-			and memberPw = ${pw}
+		where memberId = #{id}
+			and memberPw = #{pw}
 	</select>
 	
 </mapper>

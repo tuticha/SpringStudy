@@ -12,5 +12,5 @@ from testMember
 
 		select memberId
 		from testMember
-		where memberId = 'plitche'
+		where memberId = 'Plitche'
 		and memberPw = '1234'

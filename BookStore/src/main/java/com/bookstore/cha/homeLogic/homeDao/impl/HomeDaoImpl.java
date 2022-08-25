@@ -23,9 +23,12 @@ public class HomeDaoImpl implements HomeDao {
 		map.put("id", id);
 		map.put("pw", pw);		
 		
-		System.out.println("2222");
-		String dbId = sqlSession.selectOne("home.goLogin", map);
-		System.out.println(dbId);
+		System.out.println("7777");
+		Map<String, String> map2 = sqlSession.selectOne("home.goLogin", map);
+		System.out.println(map2);
+		
+		String memberId = sqlSession.selectOne("home.goLogin2", map);
+		System.out.println(memberId);
 	}
 	
 }
