@@ -59,7 +59,7 @@ public class TestController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@RequestMapping(value = "/login3", method = RequestMethod.GET)
 	public String login(@RequestParam String id, 
 						@RequestParam String pw, 
 						Model model) {

@@ -1,15 +1,16 @@
-select 1,2 ,3 ,4  from dual;
-
-CREATE TABLE testDBcha (
-	NO NUMBER NOT NULL
+CREATE TABLE testMember (
+	memberId varchar2(10) not null,
+	memberPw varchar2(10) not null
 );
 
-insert into testDBcha values (1);
-insert into testDBcha values (2);
-insert into testDBcha values (3);
-insert into testDBcha values (4);
+insert into testMember values ('plitche', '1234');
 
 
 select *
-from testDBcha
+from testMember
 
+
+		select memberId
+		from testMember
+		where memberId = 'plitche'
+		and memberPw = '1234'

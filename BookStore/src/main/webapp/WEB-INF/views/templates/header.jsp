@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div>여기는 헤더에요</div>
-
+	<a href="/cha/login">로그인</a>
 
 
 

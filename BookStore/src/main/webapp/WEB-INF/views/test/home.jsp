@@ -18,7 +18,7 @@
 
 <a href="/cha/serviceTest3?plitche=3">parameter service1</a>
 <a href="/cha/serviceTest4/5">parameter service2</a>
-<a href="/cha/login?id=plitche&pw=1111">login</a>
+<a href="/cha/login3?id=plitche&pw=1111">login</a>
 <a href="/cha/login2/plitche/1111">login2</a>
 
 <a href="/cha/homework1?cha1=1&cha2=2">homework parameter1</a>
