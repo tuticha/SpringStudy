@@ -1,0 +1,63 @@
+
+	1. 배열과 List의 가장 큰 차이첨
+		: 배열은 길이가 정해져 있고, List는 계속 add 할 수 있다.
+		
+	2. Map은 Key와 Value 두가지가 필요하다.
+		: Map<String, Integer> => Map<이름, 값>
+		: 그나마 비슷한건 List다
+	    * Map과 List의 가장 큰 차이점은 Map은 순서가 상관없이 put 되고 List는 add하는 순서대로 저장된다.
+		
+	3. <> 이게 도데체 뭐야?
+		: generic(제네릭)
+		: ex)List<Integer> a = new ArrayList<>();
+			-> 우리는 List타입의 a라는 이름을 가진 변수를 선언했어요.
+			-> 타입을 List타입으로 이미 써버려서 정수를 받을지, 실수를 받을지, 문자를 받을지 어디에 적어야할지 몰라요.
+			-> 그래서 <>인 제네릭 안에 적는거에요.
+			
+		: ex Map<String, Integer> a = new HashMap<>();
+			-> 키가 문자열이고, 값이 정수인 Map타입 a를 선언했다.
+	
+	4. 코드를 작성할 때 가장 좋은 에러는 컴파일 에러다.
+	
+	
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        System.out.println("================================");
+
+        int[] a = {1, 2, 3, 4, 5};
+        for (int i : a) {
+            System.out.println(i);
+        }
+
+        System.out.println("================================");
+
+        List<Integer> b = new ArrayList<>();
+        b.add(1);
+        b.add(2);
+        b.add(3);
+        b.add(4);
+        b.add(5);
+        for (int i=0; i<b.size(); i++) {
+            System.out.println(b.get(i));
+        }
+
+        System.out.println("================================");
+
+        Map<String, Integer> c = new HashMap();
+        c.put("1st", 1);
+        c.put("2nd", 2);
+        c.put("3nd", 3);
+        c.put("4nd", 4);
+        c.put("5nd", 5);
+
+        System.out.println(c.get("1st"));
+        System.out.println(c.get("2nd"));
+        System.out.println(c.get("3nd"));
+        System.out.println(c.get("4nd"));
+        System.out.println(c.get("5nd"));
+
+    }
+}

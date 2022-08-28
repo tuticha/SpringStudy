@@ -13,11 +13,12 @@ public class HomeServiceImpl implements HomeService {
 	@Autowired
 	private HomeDao homeDao;
 	
-	public void goLogin(String id, String pw) {
+	public String goLogin(String id, String pw) {
 		System.out.println("service id : " + id);
 		System.out.println("service pw : " + pw);
 		
-		homeDao.goLogin(id, pw);
+		String memberId = homeDao.goLogin(id, pw);
+		return memberId;
 	}
 	
 	

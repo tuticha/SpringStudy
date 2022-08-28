@@ -57,9 +57,13 @@ public class HomeController {
 		System.out.println("controller id : " + id);
 		System.out.println("controller pw : " + pw);		
 		
-		homeService.goLogin(id, pw);
+		String memberId = homeService.goLogin(id, pw);
+		String loginResult = "fail";
+		if (memberId != null) {
+			loginResult = "success";
+		}
 		
-		model.addAttribute("loginResult", "success");
+		model.addAttribute("loginResult", loginResult);
 		// session : 서버에 저장
 		
 		// cookie : 로컬 pc 브라우저에 저장

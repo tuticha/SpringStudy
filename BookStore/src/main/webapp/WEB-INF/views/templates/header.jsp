@@ -8,7 +8,21 @@
 </head>
 <body>
 	<div>여기는 헤더에요</div>
-	<a href="/cha/login">로그인</a>
+	
+	<script>
+		var loginResult = '${loginResult}';
+		
+		$(document).ready(function() {
+			if (loginResult == 'success') {
+				$('#login').css('display', 'none');
+			} else {
+				$('#logout').css('display', 'none');
+			}	
+		})
+	</script>
+	
+	<a id="login" href="/cha/login">로그인</a>
+	<a id="logout" href="/cha/logout">로그아웃</a>
 
 
 
